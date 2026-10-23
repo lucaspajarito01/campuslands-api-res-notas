@@ -1,28 +1,16 @@
 {
-  "name": "campuslands-api-res-notas",
+  "name": "api-notas-campuslands",
   "version": "1.0.0",
-  "description": "Repaso de conceptos de express",
-  "keywords": [
-    "NodeJS",
-    "express"
-  ],
-  "homepage": "https://github.com/lucaspajarito01/campuslands-api-res-notas#readme",
-  "bugs": {
-    "url": "https://github.com/lucaspajarito01/campuslands-api-res-notas/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lucaspajarito01/campuslands-api-res-notas.git"
-  },
-  "license": "ISC",
-  "author": "lucaspajarito01",
   "type": "module",
-  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
   },
   "dependencies": {
-    "express": "^5.3.0",
-    "express-validator": "^7.3.2"
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "mysql2": "^3.24.6",
+    "sequelize": "^6.37.8"
   }
 }
